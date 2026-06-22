@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    // Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+    // Module
+    "module": "node16",
+    "moduleResolution": "node16",
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    // Target
+    "target": "es2020",
+    // Types
+    "types": [
+      "node",
+      "express",
+      "jsonwebtoken",
+      "bcryptjs"
+    ],
+    // Paths
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@controllers/*": [
+        "./src/controllers/*"
+      ],
+      "@models/*": [
+        "./src/models/*"
+      ],
+      "@repositories/*": [
+        "./src/repositories/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ]
+    },
+    // Output
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    // Strict
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedSideEffectImports": true,
+    // Misc
+    "jsx": "react-jsx",
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
