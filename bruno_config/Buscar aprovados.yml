@@ -1,0 +1,17 @@
+info:
+  name: Buscar aprovados
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{base_url}}/alunos/aprovados"
+  auth:
+    type: bearer
+    token: "{{jwt_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,17 @@
+info:
+  name: Buscar aluno por ID
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{base_url}}/alunos/1"
+  auth:
+    type: bearer
+    token: "{{jwt_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,6 @@
+name: prw2_escola
+variables:
+  - name: base_url
+    value: http://localhost:3000
+  - secret: true
+    name: jwt_token

@@ -1,0 +1,26 @@
+info:
+  name: Editar aluno
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{base_url}}/alunos/1"
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Pedro",
+        "ra": "11111",
+        "nota1": 8.5,
+        "nota2": 9.5
+      }
+  auth:
+    type: bearer
+    token: "{{jwt_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
